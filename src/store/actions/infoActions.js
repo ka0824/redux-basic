@@ -1,16 +1,21 @@
+import { createAction } from "redux-actions";
+
 export const CHANGENAME = 'CHANGE_NAME';
 export const CHANGEAGE = 'CHANGE_AGE';
 
-export const chagneName = (payload) => {
-    return {
-        type: CHANGENAME,
-        payload
-    }
-}
+export const changeName = createAction(CHANGENAME, (name) => name);
+export const changeAge = createAction(CHANGEAGE, (age) => age);
 
-export const changeAge = (payload) => {
-    return {
-        type: CHANGEAGE,
-        payload
-    }
-}
+// export const chagneName = (payload) => {
+//     return {
+//         type: CHANGENAME,
+//         payload
+//     }
+// }
+
+// export const changeAge = (payload) => {
+//     return {
+//         type: CHANGEAGE,
+//         payload
+//     }
+// }
