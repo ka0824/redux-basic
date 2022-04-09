@@ -22,7 +22,7 @@ const data = [
 ]
 
 app.get('/', (req, res) => {
-    res.send({message: ok, data: data})
+    res.send({message: 'ok', data: data})
 })
 
 app.listen(port, () => {
